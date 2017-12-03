@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bsmstudyo.vebateknoloji.uruntakipsistemi2.UrunDuzenleActivity">
+
+    <include android:id="@+id/toolbar_duzenle"
+                layout="@layout/tollbar_duzenle" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+       <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp">
+
+        <TableRow
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/btn_kaydet_DUZENLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürün Güncelle" />
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/urun_resmi_genel"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/app_logo"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="20dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="Ürün Kodu" />
+
+            <EditText
+                android:id="@+id/edt_urunKodu_DUZENLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Örnek(ABC-SRC-01)"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürün İsmi" />
+
+            <EditText
+                android:id="@+id/edt_urunIsmi_DUZENLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPersonName" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürünü Yayınla" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rdb_aktif_DUZENLE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Aktif" />
+
+                <RadioButton
+                    android:id="@+id/rdb_pasif_DUZENLE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pasif" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birim Fiyatı" />
+
+            <EditText
+                android:id="@+id/edt_BirimFiyati_DUZENLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=""
+                android:text="0"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageButton
+                    android:id="@+id/urunduz_resmiBir"
+                    android:layout_width="59dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/resim_cekme_icon2" />
+
+                <ImageButton
+                    android:id="@+id/urunduz_resmiiki"
+                    android:layout_width="59dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/resim_cekme_icon2" />
+
+                <ImageButton
+                    android:id="@+id/urunduz_resmiUc"
+                    android:layout_width="59dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/resim_cekme_icon2" />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori Seçiniz" />
+
+            <RadioGroup
+                android:id="@+id/radio_group1_DUZENLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            </RadioGroup>
+        </TableRow>
+
+
+    </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>

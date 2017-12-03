@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_geridon"
+          android:title="Ana Menuye Dön"
+          android:icon="@mipmap/menu_geridon4_icon"
+          app:showAsAction="ifRoom"></item>
+
+    <item android:id="@+id/menu_ekle"
+          android:title="Ürün Ekle"
+          android:icon="@mipmap/menu_ekle3_icon"
+          app:showAsAction="ifRoom"></item>
+
+    <item android:id="@+id/menu_a_p_h"
+          app:showAsAction="always"
+         android:icon="@mipmap/menu_ic_ice_icon"
+        android:title="">
+        <menu>
+            <item android:id="@+id/menu_aktif_listele"
+                android:title="Aktif Listele"></item>
+
+            <item android:id="@+id/menu_pasif_listele"
+                android:title="Pasif Listele"></item>
+
+            <item android:id="@+id/menu_hepsi_listele"
+                android:title="Hepsini Listele"
+               ></item>
+        </menu>
+    </item>
+
+</menu>

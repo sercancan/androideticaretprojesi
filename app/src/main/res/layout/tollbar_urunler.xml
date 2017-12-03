@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1c40f"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="right">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ürünler Modülü"
+            android:textSize="20dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_ekle2_icon"
+            android:gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_geridon4_icon"
+            android:gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="13dp"
+            android:id="@+id/imageView" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</android.support.v7.widget.Toolbar>

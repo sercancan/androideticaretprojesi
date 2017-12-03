@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- actionbar bolumu yazılın yazıldıgı alan-->
+    <color name="colorPrimary">#f1c40f</color>
+
+    <!-- bildirim cubugu alanı -->
+    <color name="bildirimcubugu">#f1c40f</color>
+
+    <!--  -->
+    <color name="colorAccent">#FF4081</color>
+
+    <!--  -->
+    <color name="ActionBarRengi">#f1c40f</color>
+
+    <color name="arkaplan">#FFFDE7</color>
+
+    <color name="isimrengi">#FFFDE7</color>
+
+</resources>
+
+<!-- #3F51B5 -->

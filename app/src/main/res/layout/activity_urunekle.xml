@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bsmstudyo.vebateknoloji.uruntakipsistemi2.UrunekleActivity">
+
+
+            <include android:id="@+id/toolbar_ekle"
+                     layout="@layout/tollbar_ekle"   />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürün İsmi" />
+
+            <EditText
+                android:id="@+id/edt_urunIsmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPersonName" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birim Fiyatı" />
+
+            <EditText
+                android:id="@+id/edt_BirimFiyati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürünü Yayınla" />
+
+            <RadioGroup
+                android:id="@+id/rd_grp_aktif_pasif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rdb_aktif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Aktif" />
+
+                <RadioButton
+                    android:id="@+id/rdb_pasif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pasif" />
+            </RadioGroup>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürün Kodu" />
+
+            <EditText
+                android:id="@+id/edt_urunKodu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="(ABC-SRC-01)"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori Seçiniz" />
+
+            <RadioGroup
+                android:id="@+id/rd_grp_kategori_ekle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <ImageButton
+                        android:id="@+id/urun_resmiBir"
+                        android:layout_width="59dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/resim_cekme_icon2" />
+
+                    <ImageButton
+                        android:id="@+id/urun_resmiiki"
+                        android:layout_width="59dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/resim_cekme_icon2" />
+
+                    <ImageButton
+                        android:id="@+id/urun_resmiUc"
+                        android:layout_width="59dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/resim_cekme_icon2" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/btn_kaydet"
+                        android:layout_width="200dp"
+                        android:layout_height="75dp"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:text="Ürünü Kaydet"
+                        android:background="#f1c40f"/>
+                </TableRow>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </TableLayout>
+</RelativeLayout>

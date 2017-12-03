@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Urun Takip Sistemi</string>
+    <string name="main_button_siparisler">Siparişler</string>
+    <string name="main_button_urunler">Ürünler</string>
+    <string name="main_button_urunekle">Ürün Ekle</string>
+
+    <string name="urunduzenle_urunkodu">Ürün Kodu</string>
+    <string name="urunduzenle_urunismi">Ürün İsmi</string>
+    <string name="urunduzenle_urunyayinla">Ürün Yayınla</string>
+    <string name="urunduzenle_birimfiyati">Birim Fiyatı</string>
+    <string name="urunduzenle_kategorisex">Kategori Seçiniz</string>
+    <string name="urunduzenle_button_"></string>
+
+
+    <!-- Kategori Ekle Act. -->
+    <string name="urunkategoriekle_text1">Kategori Ismi</string>
+    <string name="urunkategoriekle_button1">Kategori Tanımla</string>
+
+</resources>
